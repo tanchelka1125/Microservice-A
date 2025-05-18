@@ -8,7 +8,7 @@ It is designed to support:
 
 - Generic dice rolls for other systems (e.g., personality traits)
 
-How to Request and Receive Data from the Dice Rolling Microservice
+# How to Request and Receive Data from the Dice Rolling Microservice
 
 The microservice provides multiple endpoints to simulate rolling dice for game mechanics, such as generating character stats or re-rolling specific values.
 
