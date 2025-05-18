@@ -30,7 +30,7 @@ requests.post('http://127.0.0.1:5000/reroll_stat', json={
 requests.post('http://127.0.0.1:5000/roll_dice')
 
 # How to Programmatically RECEIVE Data
-To receive data from the microservice, access the response object from the POST request and convert it into a Python dictionary using the .json() method. This allows you to easily retrieve values such as the full set of stat rolls, the updated stats after a re-roll, or the result of a single die roll. Example usage is shown below:
+To receive data from the microservice, access the response object from the POST request and convert it into a Python dictionary using the .json() method. This way, you can retrieve values such as the full set of stat rolls, the updated stats after a re-roll, or the result of a single die roll. Example usage is shown below:
 
 # Get initial stat values
 stats = requests.post('http://127.0.0.1:5000/roll_stats').json()
