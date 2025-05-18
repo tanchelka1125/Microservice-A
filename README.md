@@ -43,3 +43,7 @@ updated_stats = requests.post('http://127.0.0.1:3500/reroll_stat', json={
 
 # Roll one generic die
 single_roll = requests.post('http://127.0.0.1:3500/roll_dice').json())
+
+# UML Diagram
+![Microservice A UML](https://github.com/user-attachments/assets/c1af4cea-968e-42ec-afaf-fa72da8fa437)
+
