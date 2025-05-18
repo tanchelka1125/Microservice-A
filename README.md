@@ -12,9 +12,9 @@ The microservice provides multiple endpoints to simulate rolling dice for game m
 
 # How to Programmatically REQUEST Data
 To request data from the dice rolling microservice, use the Python requests library. Each endpoint accepts POST requests and responds with JSON. For example:
-- To roll initial character stats, send a POST request to http://127.0.0.1:5000/roll_stats
-- To re-roll a single stat value, send a POST request to http://127.0.0.1:5000/reroll_stat with a JSON body containing the existing stat values and the index of the value to replace
-- For a single generic dice roll, use the /roll_dice endpoint.
+- To roll initial character stats, send a POST request to http://127.0.0.1:3500/roll_stats
+- To re-roll a single stat value, send a POST request to http://127.0.0.1:3500/reroll_stat with a JSON body containing the existing stat values and the index of the value to replace
+- For a single generic dice roll, send a POST request to http://127.0.0.1:3500/roll_dice endpoint
 Example requests are shown below:
 
 # Initial stat roll
