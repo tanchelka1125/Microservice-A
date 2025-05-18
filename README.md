@@ -18,16 +18,16 @@ To request data from the dice rolling microservice, use the Python requests libr
 Example requests are shown below:
 
 # Initial stat roll
-requests.post('http://127.0.0.1:5000/roll_stats')
+requests.post('http://127.0.0.1:3500/roll_stats')
 
 # Reroll a stat value at index 2
-requests.post('http://127.0.0.1:5000/reroll_stat', json={
+requests.post('http://127.0.0.1:3500/reroll_stat', json={
     "stat_values": [15, 12, 9, 17, 6, 13],
     "index": 2
 })
 
 # Single dice roll
-requests.post('http://127.0.0.1:5000/roll_dice')
+requests.post('http://127.0.0.1:3500/roll_dice')
 
 # How to Programmatically RECEIVE Data
 To receive data from the microservice, access the response object from the POST request and convert it into a Python dictionary using the .json() method. This way, you can retrieve values such as the full set of stat rolls, the updated stats after a re-roll, or the result of a single die roll. Example usage is shown below:
@@ -36,10 +36,10 @@ To receive data from the microservice, access the response object from the POST 
 stats = requests.post('http://127.0.0.1:5000/roll_stats').json()
 
 # Reroll one value in the stats list
-updated_stats = requests.post('http://127.0.0.1:5000/reroll_stat', json={
+updated_stats = requests.post('http://127.0.0.1:3500/reroll_stat', json={
     "stat_values": stats["stat_values"],
     "index": 2
-}).json()
+}).json())
 
 # Roll one generic die
-single_roll = requests.post('http://127.0.0.1:5000/roll_dice').json()
+single_roll = requests.post('http://127.0.0.1:3500/roll_dice').json()
