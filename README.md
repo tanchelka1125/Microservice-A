@@ -13,7 +13,7 @@ The microservice provides multiple endpoints to simulate rolling dice for game m
 # How to Access and Run the Microservice
 1. Download the zipped code archive to your computer, extract its contents, and move the files to your preferred coding directory. Alternatively, you can copy the microservice_a.py script directly into your preferred code editor. 
 2. Ensure you have Python 3.x installed on your system (by running python --version in console or an equivalent thereof).
-3. Install the Flast dependency by using pip install flask command. 
+3. Install the Flask dependency by using pip install flask command. 
 4. Run the microservice and the test program by executing python microservice_a.py and python test.py 
 
 5. The Flask server will start at:
