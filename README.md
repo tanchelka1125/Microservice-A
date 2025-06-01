@@ -10,6 +10,16 @@ It is designed to support:
 
 The microservice provides multiple endpoints to simulate rolling dice for game mechanics, such as generating character stats or re-rolling specific values.
 
+# How to Access and Run the Microservice
+1. Download the zipped code archive to your computer, extract its contents, and move the files to your preferred coding directory. Alternatively, you can copy the microservice_a.py script directly into your preferred code editor. 
+2. Ensure you have Python 3.x installed on your system (by running python --version in console or an equivalent thereof).
+3. Install the Flast dependency by using pip install flask command. 
+4. Run the microservice and the test program by executing python microservice_a.py and python test.py 
+
+5. The Flask server will start at:
+http://127.0.0.1:3500
+The microservice must be running to accept requests.
+
 # How to Programmatically REQUEST Data
 To request data from the dice rolling microservice, use the Python requests library. Each endpoint accepts POST requests and responds with JSON. For example:
 - To roll initial character stats, send a POST request to http://127.0.0.1:3500/roll_stats; no input is required 
